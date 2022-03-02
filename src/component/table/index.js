@@ -17,6 +17,7 @@ const TableData = ({ tableHeader, tableData }) => {
             {tableHeader.map((data, idx) => (
               <TableCell key={data.id}>{data.name}</TableCell>
             ))}
+            <TableCell>Link</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -33,6 +34,9 @@ const TableData = ({ tableHeader, tableData }) => {
                 <TableCell>{confidence}</TableCell>
                 <TableCell>{revise}</TableCell>
                 <TableCell>{questions}</TableCell>
+                <TableCell>
+                  <Link to={plan}>click me</Link>
+                </TableCell>
               </TableRow>
             )
           )}
