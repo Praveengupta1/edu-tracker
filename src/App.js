@@ -5,9 +5,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home />} exact>
-          <Route path=":planId" elemen={<Plan />} exact />
-        </Route>
+        <Route path="/" element={<Home />} exact />
+        <Route path="/:planId" element={<Plan />} />
       </Routes>
     </Router>
   );
